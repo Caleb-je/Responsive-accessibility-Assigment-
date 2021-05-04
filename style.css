@@ -1,0 +1,117 @@
+:root{
+    --lightgray:hsl(0, 0%, 95%);
+    --orange: hsl(31, 77%, 52%);
+    --Darkcayan:hsl(184, 100%, 22%);
+    --verydarkcyan:hsl(179, 100%, 13%);
+ }
+
+body{
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    width: 1440px;
+    height: 90vh;
+    margin: 0 auto;
+    background-image: var(--lightgray);
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+}
+h1{
+    color: var(--lightgray);
+}
+
+.container{
+    width: 60%;
+    height:  90vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+.mainbox{
+    display: flex;
+    width: 720px;
+    height: 450px; 
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.box-1{
+    
+    background-color: var(--orange);
+    padding: 30px;
+    
+    
+}
+.box-2{
+   
+    background-color: var(--Darkcayan);
+    padding: 30px;
+}
+.box-3{
+    
+    background-color:var(--verydarkcyan);
+    padding: 30px;
+}
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border:hidden;
+    margin-top: 80px;
+    text-align: center;
+    background-color: var(--lightgray);
+    font-weight: 700;
+}
+.box-1 button{
+    color:var(--orange);
+}
+.box-2 button{
+    color:var(--Darkcayan);
+}
+.box-3 button{
+    color: var(--verydarkcyan);
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        font-family: "Big Shoulders Display";
+        width: 375px;
+        height: 150vh;
+        margin: 0 auto;
+        
+    }
+    .container{
+        width: 320px;
+        height:  145vh;
+        margin: 0 auto;
+      
+      
+      
+    }
+    
+    .mainbox{
+        display: grid;
+        grid-template-rows: 350px 350px 350px;
+        width: 320px;
+        height: 1050px; 
+        border-radius: 10px; 
+        margin-top: 25px ;
+        overflow: hidden;
+    }
+
+    button{
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        border:hidden;
+        margin-top: 10px;
+        text-align: center;
+        background-color: var(--lightgray);
+        font-weight: 700;
+    }
+
+}
